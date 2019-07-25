@@ -1,3 +1,5 @@
-# Provider + Get_it Architecture
+# A Flutter starter project using Provider State Management and get_it Dependency Injection
 
-This is the starting code for [this tutorial](https://www.filledstacks.com/post/flutter-architecture-my-provider-implementation-guide) where we setup a Flutter app architecture using the Provider package.
+This is a starter project for building apps with the Provider state management framework. Instead of using the default dependency injection Provider uses, we are using get_it,
+
+The layout and sample build is based off [this guide:](https://www.filledstacks.com/post/flutter-architecture-my-provider-implementation-guide).
