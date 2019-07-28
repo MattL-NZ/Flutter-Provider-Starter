@@ -12,7 +12,7 @@ class PostListItem extends StatelessWidget {
       onTap: onTap,
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-        //padding: EdgeInsets.all(10.0),
+        padding: EdgeInsets.all(10.0),
         decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(5.0),

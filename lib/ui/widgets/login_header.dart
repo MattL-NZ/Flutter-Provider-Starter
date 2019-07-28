@@ -16,8 +16,8 @@ class LoginHeader extends StatelessWidget {
       Text('Enter a number between 1 - 10', style: subHeaderStyle),
       LoginTextField(controller),
       this.validationMessage != null
-          ? Text(validationMessage, style: TextStyle(color: Colors.red))
-          : Container()
+      ? Text(validationMessage, style: TextStyle(color: Colors.red))
+      : Container()
     ]);
   }
 }

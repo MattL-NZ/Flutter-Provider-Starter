@@ -14,7 +14,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BaseView<HomeModel>(
-      onModelReady: (model) => model.getPost(Provider.of<User>(context).id),
+      onModelReady: (model) => model.getPost(Provider.of<User>(context).id),  //Example of calling the user id from anywhere in the app
       builder: (context, model, child) => Scaffold(
         backgroundColor: prefix0.backgroundColor,
         body: model.state == ViewState.Busy
@@ -38,6 +38,10 @@ class HomeView extends StatelessWidget {
     );
   }
 
+  /*
+      This method is not in the model class because it relates to UI.
+      It's not in the widgets class either as it only needs to be used once.
+  */
   Widget getPostsUi(List<Post> posts) => ListView.builder(
     itemCount: posts.length,
     itemBuilder: (context, index) => PostListItem(

@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:progress_indicator_button/progress_button.dart';
-import 'package:provider/provider.dart';
 import 'package:provider_architecutre/core/constants/enums.dart';
 import 'package:provider_architecutre/core/viewmodels/login_model.dart';
-import 'package:provider_architecutre/locator.dart';
 import 'package:provider_architecutre/ui/shared/app_colors.dart' as prefix0;
 import 'package:provider_architecutre/ui/views/base_view.dart';
 import 'package:provider_architecutre/ui/widgets/login_header.dart';
