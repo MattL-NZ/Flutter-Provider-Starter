@@ -13,10 +13,10 @@ class LoginHeader extends StatelessWidget {
     return Column(children: <Widget>[
       Text('Login', style: headerStyle),
       UIHelper.verticalSpaceMedium(),
-      Text('Enter a number between 1 - 10', style: subHeaderStyle),
+      Text('Enter a User Id between 1 - 10', style: subHeaderStyle),
       LoginTextField(controller),
       this.validationMessage != null
-      ? Text(validationMessage, style: TextStyle(color: Colors.red))
+      ? Text(validationMessage, style: TextStyle(color: Colors.white, fontSize: 20.0))
       : Container()
     ]);
   }
