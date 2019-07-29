@@ -1,4 +1,4 @@
-# A Flutter starter project using Provider State Management and get_it Dependency Injection
+# Flutter starter project using Provider and get_it Dependency Injection
 
 This is a starter project for building apps with the Provider state management framework. Instead of using the default dependency injection Provider uses, we are using get_it,
 
