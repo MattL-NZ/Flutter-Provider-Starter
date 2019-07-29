@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
-/// Contains useful functions to reduce boilerplate code
+/*
+    The UIHelper class is designed to keep boilerplate code away from the main
+    views. If it is going to be used in multiple view classes, its best to separate
+    the code out to its own class under the shared folders. This was it can be called
+    from the views and makes your code a lot cleaner.
+*/
 class UIHelper {
   // Vertical spacing constants. Adjust to your liking.
   static const double _VerticalSpaceSmall = 10.0;

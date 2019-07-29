@@ -6,6 +6,12 @@ import 'package:provider_architecutre/ui/shared/app_colors.dart';
 import 'package:provider_architecutre/ui/shared/ui_helpers.dart';
 import 'package:provider_architecutre/ui/views/base_view.dart';
 
+/*
+    Any widgets that take quite a bit of programming to create should be separated 
+    into their own classes. This is purely done to make the view classes easier to
+    read and understand.
+*/
+
 class Comments extends StatelessWidget {
   final int postId;
   Comments(this.postId);

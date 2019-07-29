@@ -5,7 +5,15 @@ import 'package:provider_architecutre/core/models/post.dart';
 import 'package:provider_architecutre/core/models/user.dart';
 import 'package:http/http.dart' as http;
 
-/// The service responsible for networking requests
+/*
+    The API service is used to communitcate with the web when obtaining records
+    through JSON for example. This service should do all the grunt work and return
+    the requested information to the classes/methods requesting it.
+    This should not communicate direclty with the UI classes. It should be called and
+    injected into the viewmodel classes. 
+*/
+
+
 class Api {
   static const endpoint = 'https://jsonplaceholder.typicode.com';
   

@@ -6,6 +6,13 @@ import 'package:provider_architecutre/core/viewmodels/base_model.dart';
 
 import '../../locator.dart';
 
+/*
+    A viewmodel is used as a joiner between the UI and services. This class handles
+    communication from the UI which it then goes to the service and requests the information.
+    Once retreived, it returns it back to the UI class.
+    ViewModels should be used for all UI elements that need to do something.
+*/
+
 class HomeModel extends BaseModel {
   PostService _postService = locator<PostService>();
   

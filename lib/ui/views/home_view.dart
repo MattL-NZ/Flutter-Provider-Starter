@@ -14,6 +14,12 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BaseView<HomeModel>(
+      /*
+          onModelReady is something that gets called as the UI gets drawn to the screen. 
+          Once ready, it will go and perfrom whatever you ask it to before the user has 
+          time to interact with the screen. This is good to use if you need to show info
+          to the user as the screen loads.
+      */
       onModelReady: (model) => model.getPost(Provider.of<User>(context).id),  //Example of calling the user id from anywhere in the app
       builder: (context, model, child) => Scaffold(
         backgroundColor: prefix0.backgroundColor,
